@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>moldLoader demo</title>
+    <script src="../js/three.js"></script>
+    <script src="../js/DDSLoader.js"></script>
+    <script src="../js/OBJLoader.js"></script>
+    <script src="../js/MTLLoader.js"></script>
+    <script src="../js/Detector.js"></script>
+    <script src="../js/TrackballControls.js"></script>
+    <script src="../MoldLoader.js"></script>
+</head>
+<body>
+    <div id="container"></div>
+</body>
+<script>
+    var divId = 'container';
+    var pathName = 'mold/bb/';
+   /* var mtlFile = 'Mr_Beep.mtl';
+    var objFile = 'Mr_Beep.obj';*/
+    var mtlFile = 'D10-3.mtl';
+    var objFile = 'D10-3.obj';
+    var loader = new MoldLoder(divId,pathName,mtlFile,objFile);
+    loader.init();
+</script>
+</html>
